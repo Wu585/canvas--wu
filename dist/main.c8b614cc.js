@@ -192,7 +192,6 @@ var actions = {
   },
   clearCanvas: function clearCanvas() {
     this.ctx.clearRect(0, 0, element.canvas.width, element.canvas.height);
-    this.myPicture('painting');
   },
   downloadCanvas: function downloadCanvas() {
     var url = element.canvas.toDataURL();
@@ -298,4 +297,4 @@ var actions = {
 actions.init();
 console.log(element.pen);
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.2baab2eb.js.map
+//# sourceMappingURL=main.c8b614cc.js.map

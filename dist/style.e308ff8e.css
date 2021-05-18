@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin: 0 24px;
+}
+
+#canvas {
+    display: block;
+}
+
+.draw {
+    width: 200px;
+    height: 50px;
+}
+
+.selections {
+    display: flex;
+    height: 60px;
+}
+
+.selections .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 6px;
+}
+
+.selections .lineWidth {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
+.selections .lineWidth li{
+    width: 64px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.selections .lineWidth .thinLine {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background: black;
+    margin: 0 auto;
+}
+
+.selections .lineWidth .strongLine {
+    display: inline-block;
+    width: 50px;
+    height: 12px;
+    background: black;
+}
+
+.selections .lineColor {
+
+}
+
+.selections .kind {
+    margin: 0 16px;
+}
+
+.selections .lineColor {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.selections .lineColor .circle {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.red {
+    background: red;
+}
+
+.black {
+    background: black;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+.selected {
+    box-shadow: 0px 0px 10px 10px rgba(221, 221, 221, 0.75);
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

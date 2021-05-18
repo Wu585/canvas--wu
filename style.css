@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+ul, ol {
+    list-style: none;
+}
+
 .icon {
     width: 32px;
     height: 32px;
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
-    margin:0 24px;
+    margin: 0 24px;
 }
 
 #canvas {
@@ -35,20 +39,27 @@
 }
 
 .selections .lineWidth {
-    line-height: 60px;
     padding: 0 12px;
+    display: flex;
+    align-items: center;
 }
-
+.selections .lineWidth li{
+    width: 64px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
 .selections .lineWidth .thinLine {
     display: inline-block;
     width: 40px;
     height: 5px;
     background: black;
+    margin: 0 auto;
 }
 
 .selections .lineWidth .strongLine {
     display: inline-block;
-    width: 40px;
+    width: 50px;
     height: 12px;
     background: black;
 }
@@ -75,18 +86,22 @@
     margin: 0 8px;
 }
 
-.red{
+.red {
     background: red;
 }
-.black{
+
+.black {
     background: black;
 }
-.yellow{
+
+.yellow {
     background: yellow;
 }
-.blue{
+
+.blue {
     background: blue;
 }
-.selected{
-    box-shadow: 0px 0px 10px 10px rgba(221,221,221,0.75);
+
+.selected {
+    box-shadow: 0px 0px 10px 10px rgba(221, 221, 221, 0.75);
 }

@@ -72,42 +72,60 @@ const actions = {
         a.href = url
         a.click()
     },
+    addClass(tag, className) {
+        tag.classList.add(className)
+        for (let key in element) {
+            if (tag !== element[key]) {
+                element[key].classList.remove(className)
+            }
+        }
+    },
     listenToUsers() {
         element.pen.onclick = () => {
             this.myPicture('painting')
+            this.addClass(element.pen, 'selected')
         }
         element.eraser.onclick = () => {
             this.myPicture('erasing')
+            this.addClass(element.eraser, 'selected')
         }
         element.clear.onclick = () => {
             this.clearCanvas()
+            this.addClass(element.clear, 'selected')
         }
         element.download.onclick = () => {
             this.downloadCanvas()
+            this.addClass(element.download, 'selected')
         }
         element.thinLine.onclick = () => {
             this.ctx.lineWidth = 5
             this.myPicture('painting')
+            this.addClass(element.thinLine, 'selected')
         }
         element.strongLine.onclick = () => {
             this.ctx.lineWidth = 10
             this.myPicture('painting')
+            this.addClass(element.strongLine, 'selected')
         }
         element.black.onclick = () => {
             this.ctx.strokeStyle = 'black'
             this.myPicture('painting')
+            this.addClass(element.black, 'selected')
         }
         element.red.onclick = () => {
             this.ctx.strokeStyle = "red"
             this.myPicture('painting')
+            this.addClass(element.red, 'selected')
         }
         element.yellow.onclick = () => {
             this.ctx.strokeStyle = "yellow"
             this.myPicture('painting')
+            this.addClass(element.yellow, 'selected')
         }
         element.blue.onclick = () => {
             this.ctx.strokeStyle = "blue"
             this.myPicture('painting')
+            this.addClass(element.blue, 'selected')
         }
     },
     init() {
@@ -122,3 +140,4 @@ const actions = {
 }
 
 actions.init()
+console.log(element.pen)

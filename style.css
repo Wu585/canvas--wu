@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
-#canvas{
+#canvas {
     display: block;
+}
+
+.draw {
+    border: 1px solid red;
+    width: 200px;
+    height: 50px;
+}
+.selections{
+    height: 60px;
 }

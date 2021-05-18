@@ -10,27 +10,43 @@
 </head>
 <body>
 <div class="selections" id="selections">
-<div class="action">
-    <span id="pen">画画</span>
-    <span id="eraser">橡皮擦</span>
-    <span id="clear">清空</span>
-    <span id="download">下载</span>
-</div>
-<div class="lineWidth">
-    <span id="thinLine">细线</span>
-    <span id="strongLine">粗线</span>
-</div>
-<div class="lineColor">
-    <span id="black">黑色</span>
-    <span id="red">红色</span>
-    <span id="yellow">黄色</span>
-    <span id="blue">蓝色</span>
-</div>
+    <div class="actions kind">
+        <div id="pen">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-painting"></use>
+            </svg>
+        </div>
+        <div class="" id="eraser">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-rubber"></use>
+            </svg>
+        </div>
+        <div id="clear">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-delete"></use>
+            </svg>
+        </div>
+        <div id="download">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xiazai"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="lineWidth kind">
+        <span class="thinLine kind" id="thinLine"></span>
+        <span class="strongLine kind" id="strongLine"></span>
+    </div>
+    <div class="lineColor kind">
+        <span class="circle black" id="black"></span>
+        <span class="circle red" id="red"></span>
+        <span class="circle yellow" id="yellow"></span>
+        <span class="circle blue" id="blue"></span>
+    </div>
 </div>
 <canvas id="canvas" width="100" height="100">
 
 </canvas>
-
+<script src="//at.alicdn.com/t/font_2556583_xqp7heh1o5.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

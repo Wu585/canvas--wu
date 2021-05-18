@@ -63,7 +63,6 @@ const actions = {
     },
     clearCanvas() {
         this.ctx.clearRect(0, 0, element.canvas.width, element.canvas.height)
-        this.myPicture('painting')
     },
     downloadCanvas() {
         let url = element.canvas.toDataURL()
